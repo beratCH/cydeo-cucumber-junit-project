@@ -52,10 +52,10 @@ Feature: Cydeo Web tables login
     And user clicks to "Process Order" button
     Then user should see "Jane Doe" in the first row of the web table
 
+ #TASK 10 : CREATE SCENARIO OUTLINE VERSION
 
   @WT_Wip
-  #TASK 10 : CREATE SCENARIO OUTLINE VERSION
-  Scenario Outline: New order placement verification
+   Scenario Outline: New order placement verification
 
     Given user is already logged in to The Web table app
     When user is on the “Order” page
@@ -70,10 +70,10 @@ Feature: Cydeo Web tables login
     And user enters credit card number "<cardNumber>"
     And user enters expiration date "<expDate>"
     And user clicks to "Process Order" button
-    Then user should see "<name>" in the first row of the web table
+    Then user should see "<expectedName>" in the first row of the web table
     Examples:
-      | quantity | name       | street     | city   | state | zip   | cardType         | cardNumber       | expDate | name       |
+      | quantity | name       | street     | city   | state | zip   | cardType         | cardNumber       | expDate | expectedName       |
       | 3        | Berat KAYA | 7th avenue | NY     | NY    | 99999 | Visa             | 1111222233334444 | 09/29   | Berat KAYA |
-      | 2        | Veli KAYA  | 5th avenue | Dayton | OH    | 99999 | American Express | 2111222233334444 | 01/29   | Veli KAYA  |
+      | 2        | Vela KAYA  | 5th avenue | Dayton | OH    | 99999 | American Express | 2111222233334444 | 01/29   | Veli KAYA  |
 
 
