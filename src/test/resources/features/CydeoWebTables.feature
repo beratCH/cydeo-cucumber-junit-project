@@ -74,6 +74,6 @@ Feature: Cydeo Web tables login
     Examples:
       | quantity | name       | street     | city   | state | zip   | cardType         | cardNumber       | expDate | expectedName       |
       | 3        | Berat KAYA | 7th avenue | NY     | NY    | 99999 | Visa             | 1111222233334444 | 09/29   | Berat KAYA |
-      | 2        | Vela KAYA  | 5th avenue | Dayton | OH    | 99999 | American Express | 2111222233334444 | 01/29   | Veli KAYA  |
+      | 2        | Veli KAYA  | 5th avenue | Dayton | OH    | 99999 | American Express | 2111222233334444 | 01/29   | Veli KAYA  |
 
 

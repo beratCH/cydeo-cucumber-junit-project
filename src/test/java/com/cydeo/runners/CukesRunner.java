@@ -8,16 +8,14 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {
                 "html:target/cucumber-reports.html",
-                "rerun:target/rerun.txt"
+                "rerun:target/rerun.txt",
+                "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
+        dryRun = false, // true -> only runs feature file to get unimplemented snippets
+        // false -> it runs both feature file and step def.
         tags = "@WT_Wip",
-        publish = true,// generates a report with public link
-        dryRun = false
-
-
+        publish = true //generating a report with public link
 )
-
-public class CukesRunner {
-}
+public class CukesRunner {}
